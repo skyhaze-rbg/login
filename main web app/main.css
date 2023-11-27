@@ -1,0 +1,489 @@
+    /* Mobile styles */
+    @media (max-width: 600px) {
+    .banner {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 20px;
+    }
+
+    .symbol {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .name {
+        display: none;
+    }
+
+    }
+
+    /* Tablet and desktop styles */
+    @media (min-width: 601px) {
+    .banner {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .symbol {
+        margin-right: auto;
+        margin-bottom: 0;
+    }
+
+    .name {
+        display: inline-block;
+        padding: 5px;
+    }
+
+    }
+
+    body {
+        background-color: skyblue;
+    }
+
+    .banner {
+        background-color: white;
+        color: black;
+        padding: 10px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .banner-right {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+    }
+
+    .banner-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .banner-content img {
+        margin-bottom: 5px;
+    }
+
+    .banner-button {
+        margin-left: 10px;
+        padding: 5px 10px;
+        background-color: white;
+        color: black;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: background-color 0.5s ease
+    }
+
+    .banner-button:hover {
+        background-color: #45a049;
+        color: white;
+    }
+
+    .symbol {
+        margin-right: auto;
+        display: flex;
+            align-items: center;
+    }
+
+    .left-button {
+        margin-right: 10px;
+    }
+
+    .middle-button {
+        margin-right: 10px;
+    }
+    .container {
+        position: fixed;
+        left: 80px;
+        bottom: 20px;
+        display: flex;
+    }
+
+    .button-bottom {
+        padding: 10px 2px;
+        background-color: skyblue;
+        height: 50px;
+        width: 60px;
+    }
+
+    .button:hover {
+        background-color: #45a049;
+        color: white;
+    }
+
+    .btn {
+        background-color: white;
+        border: none;
+        color: grey;
+        padding: 12px 16px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .top-bottom{
+        background-color: white;
+        padding: 0px;
+    }
+    .middle-banner{
+        display: flex;
+        align-items: center;
+    }
+
+    .name{
+        padding: 5px;
+        align-items: center;
+        
+    }
+    .vertical-left {
+        border-left: 2px solid grey;
+        height: 10px;
+        padding: 5px;
+    }
+    .vertical-right {
+        border-right: 2px solid grey;
+        height: 10px;
+        padding: 5px;
+    }
+    .small-img{
+        padding: 5px;
+    }
+    .left-side {
+        position: fixed;
+        width: 60px;
+        background-color:#4B9CD3;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        top: 50%; 
+        transform: translateY(-50%);
+        display: flex;
+    }
+
+    .sidebar .button {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #000;
+    }
+
+    .sidebar .button:hover {
+        background-color: #ddd;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    .circle {
+        width: 60px;
+        height: 60px;
+        background: #318CE7;
+        border-radius: 50%;
+        position: fixed;
+        bottom: 100px;
+        right: 120px;
+    }
+
+    .donut-ring {
+        position: fixed;
+        width: 200px;
+        height: 200px;
+        bottom: 32px;
+        right: 50px;
+    }
+
+    .ring {
+        position: absolute;
+        width: 50%;
+        height: 50%;
+    }
+
+    .ring.one {
+        top: 0;
+        left: 0;
+        background-color: #318CE7;
+        border-radius: 100% 0 0 0;
+    }
+
+    .ring.two {
+        top: 0;
+        right: 0;
+        background-color: #318CE7;
+        border-radius: 0 100% 0 0;
+    }
+
+    .ring.three {
+        bottom: 0;
+        left: 0;
+        background-color: #318CE7;
+        border-radius: 0 0 0 100%;
+    }
+
+    .ring.four {
+        bottom: 0;
+        right: 0;
+        background-color: #318CE7;
+        border-radius: 0 0 100% 0;
+    }
+
+    .cutout {
+        width: 50%;
+        height: 50%;
+        background-color: white;
+        position: absolute;
+        top: 25%;
+        left: 25%;
+        border-radius: 50%;
+        pointer-events: none;
+    }
+    .button-center-circle{
+        position: fixed;
+        width: 145px;
+        height: 105px;
+        bottom: 32px;
+        right: 20px;
+    }
+    .button-round-u1{
+        position: fixed;
+        width: 145px;
+        height: 190px;
+        bottom: 32px;
+        right: 20px;
+    }
+    .button-round-u2{
+        position: fixed;
+        width: 145px;
+        height: 40px;
+        bottom: 32px;
+        right: 20px;
+    }
+    .button-round-circle-face1{
+        position: fixed;
+        width: 70px;
+        height: 110px;
+        bottom: 32px;
+        right: 20px;
+    }
+    .button-round-circle-face2{
+        position: fixed;
+        width: 220px;
+        height: 110px;
+        bottom: 32px;
+        right: 20px;
+    }
+
+
+    .sidepanel {
+        width: 350px;
+        position: relative;
+        z-index: 1;
+        height: 800px;
+        top: 0;
+        right: 0;
+        background-color: white;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        margin-left: auto;
+        align-items: center;
+        border: 1px solid #ddd; 
+        border-radius: 10px; 
+        display: none;
+    }
+    
+    
+    .sidepanel a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+    
+    .sidepanel a:hover {
+        color: #f1f1f1;
+    }
+    
+    .sidepanel .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+    }
+    
+    .openbtn {
+        margin-left: 10px;
+        padding: 5px 10px;
+        background-color: white;
+        color: black;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: background-color 0.5s ease;
+    }
+    
+    .openbtn:hover {
+        background-color:#444;
+    }
+    .row-buttons {
+        height: 40px;
+        display: flex;
+        margin: 10px;
+        font-size: 10px;
+        position: absolute; 
+        top: 0; 
+    }
+    
+    .row-buttons button {
+        padding: 10px 20px; 
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 10px; 
+        background-color: #a3a8a3;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .row-buttons button:hover {
+        background-color: #37a9e3;
+    }
+    
+    
+.range{
+    position: relative;
+    width: 200px;
+    height: 15px;
+    padding: 12px;
+    margin-left: 20px;
+    background: #e0e0e0;
+    border-radius: 10px;
+    box-shadow: -2px -2px 8px white, 2px 2px 8px rgba(0, 0, 0, 0.5);
+    align-items: flex-start; 
+    display: none;
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+
+.range.show {
+  display: block; 
+  opacity: 1; 
+}
+
+.collapsible {
+    background-color: white;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: right;
+    outline: none;
+    font-size: 12px;
+    border: none; 
+}
+
+.active, .collapsible:hover {
+    background-color: #555;
+}
+
+  
+  .content {
+    padding: 20px 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+  .input-treatment {
+    height: 200px;
+    width: 320px;
+    padding-top: 5px; 
+    box-sizing: border-box; 
+  }
+  .input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px; 
+}
+
+.input-row label {
+    margin-right: 10px;
+}
+
+.input-field {
+    display: flex;
+    align-items: center;
+}
+
+.text-input {
+    flex: 1;
+    margin-right: 5px;
+}
+
+.input-unit {
+    color: #555;
+}
+
+.dropdown-field {
+    width: 146px;
+}
+
+  .input-container-three{
+    display: flex;
+    flex-direction: column;
+  }
+
+.input-container-4 {
+    display: block;
+    align-items: center;
+}
+
+.header-container {
+    margin-right: 10px; 
+}
+
+.buttons-container {
+    display: block;
+    max-width: 300px; 
+    margin-left: 280px;
+}
+
+.input-unit {
+    padding: 5px;
+    margin: 2px;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+.input-field {
+    width: 150px;
+  }
+
+  .button-container1 {
+    display: flex;
+  }
+  
+  .small-button {
+    padding: 5px;
+  }
+  h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+  
+.button-container1 {
+    margin: 5px; 
+    width: calc(50% - 10px); 
+    display: flex;
+  }
+  
+  .small-button {
+    width: 50px; 
+    margin-bottom: 5px; 
+    max-width: 30px;
+  }
+  

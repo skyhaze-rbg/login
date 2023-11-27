@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Platform</title>
+</head>
+<body>
+    <div class="banner">
+        <div class="symbol">
+            <a href="../index.html" class="top-bottom"><img src="images/main.png" alt="Modontics"></a>
+            <text class="name">My Name</text>
+        </div>
+        <div class="middle-banner">
+            <button class="btn"><i class="fa fa-bars"></i></button>
+            <div class="vertical-left"></div>
+            <img src="images/profile.png" class="small-img">
+            <label id="nameAgeLabel">Name F-23</label>
+            <div class="vertical-right"></div>
+        </div>
+        <div class="banner-right">
+            <a href="#" class="banner-button">
+                <div class="banner-content">
+                    <img src="images/bell.png" alt="bell">
+                </div>
+            </a>
+            <div class="vertical-right"></div>
+            <a href="#" class="banner-button">
+                <div class="banner-content">
+                    <img src="images/point.png" alt="point">
+                    <span>Function A</span>
+                </div>
+            </a>
+            <a href="#" class="banner-button">
+                <div class="banner-content">
+                    <img src="images/headphone.png" alt="headphone">
+                    <span>Function B</span>
+                </div>
+            </a>
+            <a href="#" class="openbtn" onclick="toggleSidepanel()">
+                <div class="banner-content">
+                    <img src="images/plus.png" alt="plus">
+                    <span>Function C</span>
+                </div>
+            </a>
+            <a href="#" class="banner-button">
+                <div class="banner-content">
+                    <img src="images/box.png" alt="box">
+                    <span>Function D</span>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div id="mySidepanel" class="sidepanel">
+        <div class="row-buttons">
+            <button>Part A</button>
+            <button>Part B</button>
+            <button>Part C</button>
+            <button>Part D</button>
+            <button>Part E</button>
+        </div>
+        <div class="input-section">
+            <h3>Section 1</h3>
+            <button type="button" class="collapsible">v</button>
+            <div class="content">
+                <textarea cols="30" rows="10" class="input-treatment" placeholder="General Treatment Plan here..."></textarea>
+            </div>
+
+            <h3>Section 2</h3>
+            <button type="button" class="collapsible">v</button>
+            <div class="content">
+                <div class="input-container">
+                    <div class="input-row">
+                        <label for="dropdown">Item 1</label>
+                        <div class="input-field">
+                            <select id="dropdown" class="dropdown-field">
+                                <option value="option1">Option 1</option>
+                                <option value="option2">Option 2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <label for="text-input">Item 2</label>
+                        <div class="input-field">
+                            <input type="text" id="text-input" class="text-input" placeholder="Type here">
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+
+            <h3>Section 3</h3>
+            <button type="button" class="collapsible">v</button>
+            <div class="content">
+                <div class="input-container-3">
+                    <div class="input-row">
+                    <label for="text-input">Item</label>
+                    <input type="text" class="input-field" placeholder="Input 1">
+                    <input type="text" class="input-field" placeholder="Input 2">
+                  </div>
+                  </div>
+                <div class="input-row">
+                <label for="text-input">Item</label>
+                <input type="text" id="text-input" class="input-field" placeholder="0                       mm">
+                </div>
+                <div class="input-container-three">
+                    <div class="input-row">
+                    <label for="text-input">Item</label>
+                    <select class="input-field">
+                      <option value="option1">00</option>
+                      <option value="option2">00</option>
+                    </select>
+                    
+                    <select class="input-field">
+                      <option value="option1">00</option>
+                      <option value="option2">00</option>
+                    </select>
+                </div>
+                <div class="input-row">
+                    <label for="text-input">Item</label>
+                    <select class="input-field">
+                      <option value="option1">00</option>
+                      <option value="option2">00</option>
+                    </select>
+                    
+                    <select class="input-field">
+                      <option value="option1">00</option>
+                      <option value="option2">00</option>
+                    </select>
+                  </div>
+                  </div>
+            </div>
+
+            <h3>Section 4</h3>
+            <button type="button" class="collapsible">v</button>
+            <div class="content">
+                <div class="input-container-4">
+                    <h3>ITEMS</h3>
+                    <div class="buttons-container">
+                        <button class="plus-button" onclick="addItem()">+</button>
+                        <button class="minus-button" onclick="removeItem()">-</button>
+                    </div>
+                    <div id="itemContainer" class="itemContainer">
+                    </div>
+                </div>
+                
+            </div>
+
+            <h3>Section 5</h3>
+            <button type="button" class="collapsible">v</button>
+            <div class="content">
+                <div class="button-container1">
+                    <button class="small-button">1</button>
+                    <button class="small-button">2</button>
+                    <button class="small-button">3</button>
+                    <button class="small-button">4</button>
+                    <button class="small-button">5</button>
+                    <button class="small-button">6</button>
+                    <button class="small-button">7</button>
+                    <button class="small-button">8</button>
+                </div>
+                <div class="button-container1">
+                    <button class="small-button">1</button>
+                    <button class="small-button">2</button>
+                    <button class="small-button">3</button>
+                    <button class="small-button">4</button>
+                    <button class="small-button">5</button>
+                    <button class="small-button">6</button>
+                    <button class="small-button">7</button>
+                    <button class="small-button">8</button>
+                </div>
+                <div class="button-container1">
+                    <button class="small-button">1</button>
+                    <button class="small-button">2</button>
+                    <button class="small-button">3</button>
+                    <button class="small-button">4</button>
+                    <button class="small-button">5</button>
+                    <button class="small-button">6</button>
+                    <button class="small-button">7</button>
+                    <button class="small-button">8</button>
+                </div>
+                <div class="button-container1">
+                    <button class="small-button">1</button>
+                    <button class="small-button">2</button>
+                    <button class="small-button">3</button>
+                    <button class="small-button">4</button>
+                    <button class="small-button">5</button>
+                    <button class="small-button">6</button>
+                    <button class="small-button">7</button>
+                    <button class="small-button">8</button>
+                </div>
+
+
+                <div class="input-row">
+                <select class="input-field">
+                  <option value="option1">Option 1</option>
+                  <option value="option2">Option 2</option>
+                </select>
+
+                <select class="input-field">
+                  <option value="option1">Option A</option>
+                  <option value="option2">Option B</option>
+                </select>
+                </div>
+        </div>
+            
+        </div>
+        
+
+    </div>
+    <div id="section" style="display: none;">
+    </div>
+    <div class="left-side">
+        <div class="sidebar">
+          <a href="#" class="button" onclick="toggleRangeSlider()"><img src="images/face.png"></a>
+          <a href="#" class="button" onclick="toggleRangeSlider()"><img src="images/jaw.png"></a>
+        </div>
+        <input type="range" class="range" id="rangeSlider">
+      </div>
+    <div class="container">
+        <a href="#" class="button-bottom"><img src="images/fullscreen.png" alt="Fullscreen"></a>
+        <a href="#" class="button-bottom"><img src="images/half.png" alt="Halfscreen"></a>
+        <a href="#" class="button-bottom"><img src="images/mesh.png" alt="Mesh"></a>
+        <a href="#" class="button-bottom"><img src="images/dental.png" alt="Tooth"></a>
+    </div>
+    <div class="donut-ring">
+        <div class="ring one"></div>
+        <div class="ring two"></div>
+        <div class="ring three"></div>
+        <div class="ring four"></div>
+        <div class="cutout"></div>
+    </div>
+    <div class="circle"></div>
+    <div class="button-circle">
+        <a href="#" class="button-center-circle"><img src="images/center_circle_face.png" alt="Fullscreen"></a>
+        <a href="#" class="button-round-u1"><img src="images/u.png" alt=""></a>
+        <a href="#" class="button-round-u2"><img src="images/u.png" alt=""></a>
+        <a href="#" class="button-round-circle-face1"><img src="images/circle_face.png" alt=""></a>
+        <a href="#" class="button-round-circle-face2"><img src="images/circle_face.png" alt=""></a>
+    </div>
+    
+      
+        
+    <script src="main.js"></script>
+</body>
+</html>
